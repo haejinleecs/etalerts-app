@@ -1,0 +1,88 @@
+*{
+    font-family: 'Playfair Display';
+}
+
+.d-flex{
+    width: 100%;
+    height: 100vh;
+    background-color: #031658;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-div{
+    width: 470px;
+    height: 525px;
+    background-color: #CBDBF4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    position: relative;
+    border-radius: 3px;
+}
+
+.signup-blurb{
+    position: absolute;
+    top: 90px;
+    color: #031658;
+}
+
+.signup-or-login{
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-group{
+    width: 70%;
+    position: relative;
+    bottom: 10px;
+}
+
+input{
+    height: 75%;
+}
+
+label{
+    color: #031658;
+    font-size: 18px;
+}
+
+#login-button{
+    border: none;
+    background-color: #031658;
+    color: white;
+    width: 70%;
+    height: 8%;
+    color: white;
+    font-size: 25px;
+
+}
+
+.header-text{
+    color: #CBDBF4;
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+.subheader-text{
+    color: #CBDBF4;
+    font-size: 20px;
+    font-weight: lighter;
+    position: relative;
+    bottom: 15px;
+}
+
+.nav{
+    font-weight: bolder;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#login-text{
+    text-decoration: underline solid black 10px
+}

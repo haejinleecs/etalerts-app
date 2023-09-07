@@ -1,0 +1,74 @@
+* {
+    font-family: 'Playfair Display';
+    color:#031658;
+}
+
+.navbar-custom {
+    height: 60px;
+    font-size: 25px;
+    background-color:#031658;
+}
+
+.nav-link, .navbar-brand, .nav-logout{
+    color: #CBDBF4 !important;
+}
+.nav-logout {
+    font-size: 18px;
+}
+
+.float-container {
+    border: 10px solid #fff;
+    padding: 10px !important;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    height:20%;
+}
+
+.container-md {
+    background-color: rgb(184, 184, 184);
+    border-radius: 3px;
+}
+
+.container-sm {
+    margin-bottom: 30px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 3px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.borderless table {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
+.track-button {
+    background-color:#031658 !important;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    position: relative;
+    top: -30px;
+    right: 0px;
+    transform: scale(1.5);
+  }
+
+#dataBox {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}

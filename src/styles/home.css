@@ -1,0 +1,117 @@
+/* Styling code for the home page */
+* {
+    font-family: 'Playfair Display';
+    color: #031658;
+}
+
+.navbar-custom {
+    height: 60px;
+    font-size: 25px;
+    background-color: #031658;
+}
+
+.nav-link,
+.navbar-brand,
+.nav-logout {
+    color: #CBDBF4 !important;
+}
+
+.nav-logout {
+    font-size: 18px;
+}
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+
+}
+
+.big-box {
+    padding: 45px;
+    float: center;
+    text-align: center;
+    height: 200px;
+
+}
+
+.float-child {
+    width: 30%;
+    position: absolute;
+    left: 20px;
+    float: center;
+    padding: 30px;
+    height: 30%;
+}
+
+.container-md {
+    background-color: rgb(214, 214, 214);
+    outline-color: #031658;
+    outline-style: solid;
+}
+
+.container-sm {
+    background-color: rgb(184, 184, 184);
+    margin-top: 20px;
+    width: 50%;
+    position: absolute;
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline-color: #031658;
+    outline-style: solid;
+    font-weight: bold;
+    font-size: large;
+}
+
+.container-lg {
+    background-color: rgb(184, 184, 184);
+    position: relative;
+    left: 600px;
+    margin-top: 20px;
+    width: 50%;
+    float: right;
+    padding: 10px;
+    background-color: rgb(214, 214, 214);
+    outline-color: #031658;
+    outline-style: solid;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 20px;
+}
+
+.borderless table {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
+.border table {
+    border-color: #000000;
+    text-align: center;
+    width: 100%;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    align-items: center;
+    float: center;
+    font-size: x-large;
+    color: #000000;
+    padding: 8px;
+    background-color: rgb(184, 184, 184);
+}
+
+#addtxtbox {
+    text-align: center;
+    display: block;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: larger;
+}

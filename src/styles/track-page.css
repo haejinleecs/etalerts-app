@@ -1,0 +1,91 @@
+* {
+    font-family: 'Playfair Display';
+    color:#031658;
+}
+
+.navbar-custom {
+    height: 60px;
+    font-size: 25px;
+    background-color:#031658;
+}
+
+.nav-link, .navbar-brand, .nav-logout{
+    color: #CBDBF4 !important;
+}
+.nav-logout {
+    font-size: 18px;
+}
+
+.float-child {
+    padding: 20px;
+}
+
+.name {
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.heading {
+    text-align: center;
+}
+
+#user-container {
+    margin-left: 20px;
+    float: left;
+    width: 60%;
+}
+
+#friend-container {
+    margin-right: 20px;
+    float: right;
+    width: 35%;
+}
+
+.info-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-fluid {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.img-user {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.container-md {
+    background-color: rgb(184, 184, 184);
+    border-radius: 3px;
+}
+
+.container-sm {
+    margin-bottom: 20px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 3px;
+}
+
+.borderless table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+
+.track-button {
+    background-color:#031658 !important;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ETAlerts</title>
+  <script type="module" src="./src/scripts/searchFlight.js"></script>
+  <link rel="stylesheet" href="./src/styles/search.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand navbar-custom px-xl-3">
+    <a class="navbar-brand" href="#">ETAlert</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/track">Track</a>
+        </li>
+      </ul>
+    </div>
+    <a class="nav-logout" href="/login">Log Out</a>
+  </nav>
+
+
+  <div class="p-3 text-center">
+    <h2><strong>Search Flights</strong></h2>
+  </div>
+
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Departing Airport IATA Code" id="departCode"/>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Destination Airport IATA Code" id="destinCode"/>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Airline ICAO" id="airICAO"/>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Airline IATA" id="airIATA"/>
+        </div>
+      </div>
+    </form>
+    
+    <div class="d-flex justify-content-center mt-3 mb-3">
+      <button type="button" class="btn btn-primary" id="vagueButton">Search</button>
+    </div>
+
+    <div class="input-group mt-4 mb-3 justify-content-center">
+      <h3>OR ENTER FLIGHT CODE #</h3>
+    </div>
+
+    <div class="d-flex justify-content-center mt-3 mb-3">
+      <!-- <span class="input-group-text" id="basic-addon1">Departing Airport</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" width="500px"> -->
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Flight Code" id="flightCode" />
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-3 mb-3">
+      <button type="button" class="btn btn-primary" id="searchButton">Search</button>
+    </div>
+
+    <div class="d-flex justify-content-center mt-3 mb-3" id="dataBox">
+      
+    </div>
+
+    <div class="d-flex justify-content-center mt-3 mb-3" id="buttonContainer">
+
+    </div>
+  </div>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+</body>
+
+</html>
