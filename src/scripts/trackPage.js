@@ -44,46 +44,37 @@ function loadUserFlights() {
     let c3 = document.createElement("td");
     let c4 = document.createElement("td");
 
-    // modify after Alex is done!!
-    c3.innerHTML = user.departure_airport +" "+user.departure_time; // ** MIGHT HAVE TO CHANGE ***
-    c4.innerHTML = user.arrival_airport + " " +user.arrival_time; // ** MIGHT HAVE TO CHANGE ***
-
-    // Append cells to headings row
+    c3.innerHTML = user.departure_airport +" "+user.departure_time;
+    c4.innerHTML = user.arrival_airport + " " +user.arrival_time;
     info.appendChild(c3);
     info.appendChild(c4);
 
-    // ** figure out how to display flight??? iFrames doesn't work for flightaware.com
-    // add track button -> externally links to flightaware.com
+    // Track button will send user to page on flightaware.com. In future, we may implement using iFrames.
     let t_button = document.createElement("button");
-    // add id to button with flight #
-    t_button.id = user.flightCode; // *** CHANGE ACCORDING TO DATA
+    t_button.id = user.flightCode;
     t_button.innerHTML = "Track";
-    t_button.addEventListener("click", async(e) => window.location = `https://flightaware.com/live/flight/${t_button.id}` ); // add event listener  tableAndButton.appendChild(t_button);
+    t_button.addEventListener("click", async(e) => window.location = `https://flightaware.com/live/flight/${t_button.id}` ); 
     t_button.classList.add("track-button","btn", "btn-primary", "btn-lg");
     tableAndButton.appendChild(t_button);
 
   }
   else {
-    name.innerHTML = `No flights to track!`; // Flight #flightInfo
-    name.classList.add("name"); // add name class to element
-    flight.appendChild(name); // append to the container
+    name.innerHTML = `No flights to track!`;
+    name.classList.add("name");
+    flight.appendChild(name);
   }
   
 }
 
-// loads the list of friends who have flights they are tracking and displays the flight info for each of those flights
+// Load friends' flights to track
 function loadFriendFlights() {
   let friends = user.friends;
-  // iterate through each friend f
   friends.forEach(f => {
-    // ** ASK FOR HELP -> get friend f's flight info 
-    // check if friend f has any flights to display, if so continue
-    if ("flightCode" in f) {
-      // create small container for each friend
+    if ("flightCode" in f) { // Check if friend has flight to track
+      // Create UI elements
       let flight = document.createElement("div");
       flight.classList.add("container-sm");
       friendContainer.appendChild(flight);
-
       // create name element
       let name = document.createElement("h4");
       name.innerHTML = `${f.firstname} ${f.lastname}`; // Friend's <First Name> <Last Name>
@@ -123,21 +114,17 @@ function loadFriendFlights() {
       let c5 = document.createElement("td");
       let c6 = document.createElement("td");
 
-      // modify depending on Alex + Lyss
       c4.innerHTML = f.flightCode;
       c5.innerHTML = f.departure_airport+" "+f.departure_time;
       c6.innerHTML = f.arrival_airport+" "+f.arrival_time;
-      // c8.innerHTML = f.status; ** figure out status with Alex using API
-    
+        
       // Append cells to headings row
       info.appendChild(c4);
       info.appendChild(c5);
       info.appendChild(c6);
 
-      // add track button -> externally links to flightaware.com
       let t_button = document.createElement("button")
-      // add id to button with flight #
-      t_button.id = f.flightCode; // *** CHANGE ACCORDING TO DATA
+      t_button.id = f.flightCode;
       t_button.innerHTML = "Track";
       t_button.classList.add("track-button","btn", "btn-primary", "btn-lg");
       t_button.addEventListener("click", async(e) => window.location = `https://flightaware.com/live/flight/${t_button.id}/history` ); // add event listener

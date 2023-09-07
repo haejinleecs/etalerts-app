@@ -5,9 +5,6 @@ import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { MongoClient, ServerApiVersion } from 'mongodb'
 import bcrypt from "bcrypt"
-// import passport from "passport"
-// import { LocalStrategy } from 'passport-local'
-// import crypto from 'crypto'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

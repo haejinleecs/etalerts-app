@@ -4,8 +4,6 @@ const email = document.getElementById('emailInput')
 const password = document.getElementById('passwordInput')
 const loginButton = document.getElementById('login-button')
  
-// let db = new PouchDB('http://326:timothy@localhost:5984/users');
-
 async function validateLogin(data){
   const valid = await fetch("/login", {
     method: 'POST',
